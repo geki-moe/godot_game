@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Assets/Images/bg.png" type="Texture" id=1]
+[ext_resource path="res://Scenes/Scripts/Main.gd" type="Script" id=2]
+
+[node name="RootNode" type="Node2D"]
+script = ExtResource( 2 )
+
+[node name="Viewport" type="Viewport" parent="."]
+size = Vector2( 360, 640 )
+msaa = 3
+
+[node name="bg" type="Sprite" parent="Viewport"]
+texture = ExtResource( 1 )

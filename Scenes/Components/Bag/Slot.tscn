@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Scenes/Components/Bag/Slot.gd" type="Script" id=1]
+[ext_resource path="res://Assets/Images/buttonSquare_beige_pressed.png" type="Texture" id=2]
+[ext_resource path="res://Assets/Images/buttonSquare_beige.png" type="Texture" id=3]
+
+[node name="BagSlot" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = -979.0
+margin_bottom = -551.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Item" type="TextureButton" parent="."]
+margin_right = 45.0
+margin_bottom = 49.0
+texture_normal = ExtResource( 2 )
+texture_pressed = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
